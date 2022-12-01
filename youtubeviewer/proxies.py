@@ -33,12 +33,7 @@ def gather_proxy():
     proxies = []
     print(bcolors.OKGREEN + 'Scraping proxies ...' + bcolors.ENDC)
 
-    link_list = ['https://raw.githubusercontent.com/clarketm/proxy-list/master/proxy-list-raw.txt',
-                 'https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt',
-                 'https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/socks4.txt',
-                 'https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/socks5.txt',
-                 'https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/proxy.txt',
-                 'https://raw.githubusercontent.com/sunny9577/proxy-scraper/master/proxies.txt']
+    link_list = ['https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies.txt']
 
     for link in link_list:
         response = requests.get(link)
